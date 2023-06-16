@@ -56,21 +56,31 @@ spark = SparkSession     .builder     .appName("Python Spark SQL basic example")
 # In[9]:
 
 
-df = spark.read     .format("jdbc")     .option("url", "jdbc:postgresql://localhost:5434/Bank")     .option("dbtable", "account")     .option("user", "lllevchenko")     .option("password", "1234")     .option("driver", "org.postgresql.Driver")     .load()
+# df = spark.read     .format("jdbc")     .option("url", "jdbc:postgresql://localhost:5434/Bank")     .option("dbtable", "account")     .option("user", "lllevchenko")     .option("password", "1234")     .option("driver", "org.postgresql.Driver")     .load()
 
-df.printSchema()
+# df.printSchema()
 
 
 # In[12]:
 
 
-df = spark.read     .format("jdbc")     .option("url", "jdbc:postgresql://localhost:5434/Bank")     .option("dbtable", "calls")     .option("user", "lllevchenko")     .option("password", "1234")     .option("driver", "org.postgresql.Driver")     .load()
+# df = spark.read     .format("jdbc")     .option("url", "jdbc:postgresql://localhost:5434/Bank")     .option("dbtable", "calls")     .option("user", "lllevchenko")     .option("password", "1234")     .option("driver", "org.postgresql.Driver")     .load()
 
-df.printSchema()
-
-
-# In[ ]:
+# df.printSchema()
 
 
+# In[ 13]:
+
+studentDf = spark.createDataFrame([
+	Row(id=1,name='vijay',marks=67),
+	Row(id=2,name='Ajay',marks=88),
+	Row(id=3,name='jay',marks=79),
+	Row(id=4,name='vinay',marks=67),
+])
+
+studentDf.select("id","name","marks").write.format("jdbc")\
+    .option("url", "jdbc:postgresql://localhost:5434/Bank") \
+    .option("driver", "org.postgresql.Driver").option("dbtable", "students") \
+    .option("user", "lllevchenko").option("password", "1234").save()
 
 
