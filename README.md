@@ -48,6 +48,20 @@ The Physical Model of the Bank:
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Physical%20Model.png)
 
+## Data generation
+Python, combined with the Faker library, offers a powerful and flexible way to generate large quantities of fake data for a variety of purposes, from testing algorithms and systems to populating databases for development and demonstration purposes.
+The Faker library is particularly versatile in its ability to produce a wide array of fake data types, including but not limited to:
+1. Names and Text: Faker can generate full names, first names, last names, and even usernames. It can also create random paragraphs, sentences, and words.
+2. Addresses: Faker is capable of producing full addresses, including city names, states, countries, and even latitude and longitude coordinates.
+3. Dates and Times: The library can generate past or future dates within specific ranges, random times, and timestamps.
+4. Numbers: Faker can create random integers, decimals, and even generate unique numbers to act as identifiers or keys.
+5. Email Addresses and URLs: Faker can create valid, syntactically correct email addresses and URLs.
+6. Miscellany: Apart from these, Faker can produce data like color names, company names, job titles, and even lorem ipsum text.
+An essential feature of Faker is its support for multiple languages and locales, which means it can generate data that is linguistically and culturally appropriate for many different countries and regions.
+Here is a part of code, which fully loaded into the folder data_generation
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/6.png)
+
 ## Data pipeline 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Data%20Pipeline.png)
 
