@@ -32,19 +32,17 @@ To make these benefits a reality, the bank must prioritize data management and a
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/2.jpg)
 
-![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/4.png)
-
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/5.jpg)
 
-The Conceptual Model of the Bank:
+The Conceptual Data Model:
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Conceptual%20Model.png)
 
-The Logical Model of the Bank:
+The Logical Data Model:
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Logical%20Model.png)
 
-The Physical Model of the Bank:
+The Physical Data Model:
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Physical%20Model.png)
 
@@ -126,6 +124,10 @@ The example of it uploaded to the database:
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Data%20Example.png)
 
 The Database: https://github.com/Duckling1554/online_banking/blob/main/BD/dump-Bank-202306170139
+
+CRUD:
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/4.png)
 
 #### Stage 5. Data reporting and dashboarding
 It was decided to create two analytical reports, valuable for the bank:
