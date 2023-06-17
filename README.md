@@ -25,6 +25,13 @@ The innovative approach that the bank aims to adopt revolves around customer clu
 4. Improved Customer Service: Customer segmentation can also aid in providing differentiated customer service. The bank can provide dedicated service representatives or specialized service channels for different customer clusters.
 5. Product and Service Development: Insights from customer clustering can inform the development of new products and services. By understanding the needs and preferences of each customer segment, the bank can design products that directly cater to these requirements.
 To make these benefits a reality, the bank must prioritize data management and analytical capabilities. It must ensure that data collection is robust and secure, and invest in analytical tools that can perform sophisticated customer segmentation. With such investments, the online bank can fully leverage its digital platform to deliver exceptional value to its customers, setting itself apart in the competitive banking landscape.
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/1.jpg)
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/2.jpg)
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/3.jpg)
+
 The Conceptual Model of the Bank:
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Conceptual%20Model.png)
