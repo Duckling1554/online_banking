@@ -31,9 +31,8 @@ branches_customers is more reliable source that online banking
 2. Data unioning by reliability. If there are rows in both sources related to one person, row, that stores in more reliable source will be left.
 3. Removing duplicates
 Scheme of MDM from different sources
+
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/image.png)
-
-
 
 #### Stage 3. ML model creation
 <b>KMeans</b> technique was used to claster the data.
@@ -49,7 +48,9 @@ Stages of ML pipeline:
 4. Creating data frame with clusters
 
 Features, used for clasterization:
+
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Train%20features.png)
+
 #### Stage 4. Data loading to PostgreSQL
 Then, the Data Warehouse was initiated with the following DDL scripts:
 https://github.com/Duckling1554/online_banking/blob/main/BD/Bank_DDL.sql
