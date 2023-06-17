@@ -95,11 +95,15 @@ For instance,
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/DDL%20Example.png)
 
-Then, Spark were used to fill the preprocessed data inside of the Database
+Then, Spark were used to fill the preprocessed data inside of the Database with this script:
+https://github.com/Duckling1554/online_banking/blob/main/pipeline/pipeline.py
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/List%20of%20Tables.png)
+
 
 The result of it was a working database:
 
-![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/List%20of%20Tables.png)
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Spark_Streaming.png)
 
 Then the Data was generated:
 https://github.com/Duckling1554/online_banking/blob/main/BD/Bank_Data.xlsx
@@ -127,10 +131,13 @@ The example of resulting analytical Data Mart:
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Channels%20Example.png)
 
 **For BI-platform Re:dash was chosen.**
+
 Re:dash is an open-source software that allows you to connect and query your data sources, build dashboards to visualize data, and share them with your organization. Re:dash supports various data sources including SQL databases, NoSQL sources, BigQuery, and more. It's a powerful tool for people who need to quickly draw insights from their data.
 
-CRM reports were built.
+CRM reports were built:
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Redash.png)
+
+In this report there are multiple filters and this a top-level example, how reports can be built for C-level managers planning.
 
 Results of clustering can be seen below:
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Clustering.png)
