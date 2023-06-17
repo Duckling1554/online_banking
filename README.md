@@ -98,12 +98,11 @@ For instance,
 Then, Spark were used to fill the preprocessed data inside of the Database with this script:
 https://github.com/Duckling1554/online_banking/blob/main/pipeline/pipeline.py
 
-![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/List%20of%20Tables.png)
-
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Spark_Streaming.png)
 
 The result of it was a working database:
 
-![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Spark_Streaming.png)
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/List%20of%20Tables.png)
 
 Then the Data was generated:
 https://github.com/Duckling1554/online_banking/blob/main/BD/Bank_Data.xlsx
