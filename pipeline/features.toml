@@ -1,0 +1,34 @@
+[TRAIN_FEATURES]
+TRAIN_FEATURES =['CUSTOMER_TYPE (text',
+    'up_to_18',
+    '18_to_30',
+    '30_to_45',
+    'after_45',
+    'GENDER (text',
+    ' MARITAL_STATUS (text',
+    ' COUNTRY (text',
+    ' BLACK_LIST_FLG (int',
+    ' CHILDREN_CNT (int',
+    ' VIP_FLG (int',
+    ' IS_EMPLOYEE_FLG (int',
+    'CUSTOMER_TRANSACTIONS_CNT',
+    'CUSTOMER_TRANSACTIONS_SUM',
+    'CREDIT_FLG',
+    'CARDS_CNT',
+    'CONTRACT_STATUS (text)',
+    'CONTRACT_TYPE (text)',
+    'CREDIT_CLASS (text)',
+    'MEAN_LOAN_AMT_x',
+    'MEAN_TRANSACTION_x',
+    'TRANSACTION_TO_BALANCE_RATIO',
+    'TRANSACTION_TO_LOAN_RATIO'
+]
+CATEGORICAL_COLUMNS = [
+    'CUSTOMER_TYPE (text',
+    'GENDER (text', 
+    ' MARITAL_STATUS (text', 
+    ' COUNTRY (text', 
+    'CONTRACT_STATUS (text)', 
+    'CONTRACT_TYPE (text)', 
+    'CREDIT_CLASS (text)'
+]
