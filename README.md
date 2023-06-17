@@ -126,4 +126,11 @@ The example of resulting analytical Data Mart:
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Channels%20Example.png)
 
+**For BI-platform Re:dash was chosen.**
+Re:dash is an open-source software that allows you to connect and query your data sources, build dashboards to visualize data, and share them with your organization. Re:dash supports various data sources including SQL databases, NoSQL sources, BigQuery, and more. It's a powerful tool for people who need to quickly draw insights from their data.
 
+CRM reports were built.
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Redash.png)
+
+Results of clustering can be seen below:
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Clustering.png)
