@@ -58,6 +58,8 @@ For instance,
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/DDL%20Example.png)
 
+Then, Spark were used to fill the preprocessed data inside of the Database
+
 The result of it was a working database:
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/List%20of%20Tables.png)
