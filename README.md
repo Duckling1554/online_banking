@@ -10,9 +10,9 @@
 
 #### Roles:
 1. System Architect - Alina Subbotina
-2. Data Engineer - Nikita Senyatkin
+2. Data Engineer/ML Analyst - Nikita Senyatkin
 3. Business Analyst - Danila Yatsenko
-4. BI Analyst - Liubov Levchenko
+4. BI Analyst/Data Engineer - Liubov Levchenko
 
 #### Business case description.
 Our object of interest is a newly established online bank that serves both individual and corporate clients. With its simplified organizational structure and lower levels of bureaucracy, the bank aims to deliver a seamless, user-friendly experience that caters to the modern customer's needs.
