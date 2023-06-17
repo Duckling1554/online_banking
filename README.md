@@ -14,14 +14,14 @@ The Physical Model of the Bank:
 ## Data pipeline 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Data%20Pipeline.png)
 
-####Pipeline stages:
+#### Pipeline stages:
 - taking raw data from excel
 - making MDM and data preparation using Apache Spark
 - creating ML clasterization model
 - pushing data to PostgreSQL
 - making dashboards using Redash
 
-####Stages 1,2. Raw data extraction, Creating MDM
+#### Stages 1,2. Raw data extraction, Creating MDM
 
 Apache Spark Session is launched, some tables, such as CUSTOMER comes from several sources, it is necessary to create <b>MDM logic</b> to union tables into one:
 1. Range data sources by their credibility. In case of customer, we had two sources:
