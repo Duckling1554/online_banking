@@ -63,10 +63,12 @@ def feature_creator(customer, transactions, credit_card, loan, account_balance, 
     df = pd.merge(df, balance_agg, right_on='CUSTOMER_ID (int', left_on='CUSTOMER_ID', how='left')
     df = pd.merge(df, loan, right_on='CUSTOMER_ID (int)', left_on='CUSTOMER_ID', how='left')
 
-    return df[settings.TRAIN_FEATURES.TRAIN_FEATURES]
+    return df[settings.TRAIN_FEATURES.TRAIN_FEATURES+['CUSTOMER_ID']]
 
 
 def data_preprocessing(df):
+    df = df.copy()
+    df = df[settings.TRAIN_FEATURES.TRAIN_FEATURES]
     df_dummies = pd.get_dummies(df[settings.TRAIN_FEATURES.CATEGORICAL_COLUMNS])
     df = pd.concat([df, df_dummies], axis=1)
     df.drop(settings.TRAIN_FEATURES.CATEGORICAL_COLUMNS, axis=1, inplace=True)

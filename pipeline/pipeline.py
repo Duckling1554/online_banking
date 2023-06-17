@@ -9,7 +9,7 @@ import sys
 
 from set_vars import set_vars
 
-set_vars()
+# set_vars()
 
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
@@ -60,7 +60,7 @@ print("Table dropped !")
 # Add table with new columns
 sparkDF = spark.createDataFrame(df)
 
-sparkDF.select("CUSTOMER_TYPE", "up_to_18", "18_to_30", "30_to_45", "after_45", "GENDER", "MARITAL_STATUS", "COUNTRY", "BLACK_LIST_FLG", "CHILDREN_CNT","VIP_FLG", "IS_EMPLOYEE", "CUSTOMER_TRANSACTIONS_CNT", "CUSTOMER_TRANSACTIONS_SUM", "CREDIT_FLG", "CARDS_CNT", "CONTRACT_STATUS (text)", "CONTRACT_TYPE (text)", "CREDIT_CLASS (text)", "MEAN_LOAN_AMT_x", "MEAN_TRANSACTION_x", "TRANSACTION_TO_BALANCE_RATIO", "TRANSACTION_TO_LOAN_RATIO", "Cluster")\
+sparkDF.select("CUSTOMER_ID", "CUSTOMER_TYPE", "up_to_18", "18_to_30", "30_to_45", "after_45", "GENDER", "MARITAL_STATUS", "COUNTRY", "BLACK_LIST_FLG", "CHILDREN_CNT","VIP_FLG", "IS_EMPLOYEE", "CUSTOMER_TRANSACTIONS_CNT", "CUSTOMER_TRANSACTIONS_SUM", "CREDIT_FLG", "CARDS_CNT", "CONTRACT_STATUS (text)", "CONTRACT_TYPE (text)", "CREDIT_CLASS (text)", "MEAN_LOAN_AMT_x", "MEAN_TRANSACTION_x", "TRANSACTION_TO_BALANCE_RATIO", "TRANSACTION_TO_LOAN_RATIO", "Cluster")\
     .write.format("jdbc")\
     .option("url", "jdbc:postgresql://localhost:5434/Bank")\
     .option("driver", "org.postgresql.Driver")\
