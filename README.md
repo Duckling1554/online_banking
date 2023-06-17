@@ -34,7 +34,7 @@ To make these benefits a reality, the bank must prioritize data management and a
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/4.png)
 
-![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/5.png)
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/5.jpg)
 
 The Conceptual Model of the Bank:
 
