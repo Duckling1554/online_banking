@@ -1,4 +1,39 @@
 # online_banking
+## Stages of the project:
+1. Chosen a company type and developed its business model
+2. Created conceptual, logical and physical data models for the company
+3. Created a database, generated data and fiiled it in
+4. Created role-to-asset CRUD matrix
+5. Developed master-data standards
+6. Implemented BI platform
+7. Developed analytical ML solution
+
+#### Roles:
+1. System Architect - Alina Subbotina
+2. Data Engineer - Nikita Senyatkin
+3. Business Analyst - Danila Yatsenko
+4. BI Analyst - Liubov Levchenko
+
+#### Business case description.
+Our object of interest is a newly established online bank that serves both individual and corporate clients. With its simplified organizational structure and lower levels of bureaucracy, the bank aims to deliver a seamless, user-friendly experience that caters to the modern customer's needs.
+The bank's range of products is extensive, covering 24 types of deposit accounts, 16 kinds of debit cards, credit cards, cash credits, mortgage loans, auto loans, insurance programs, and currency exchange services. Given that online banking is the main operational pathway, digital customer interactions and transactions form the crux of the bank's data collection.
+Opportunities:
+The innovative approach that the bank aims to adopt revolves around customer clustering. By implementing a robust system of customer segmentation based on collected data, the bank can unlock a multitude of benefits:
+1. Personalized Offerings: Clustering customers based on their banking behavior, preferences, and needs can enable the bank to offer tailored products and services. This level of personalization can greatly enhance customer satisfaction, leading to increased customer retention and loyalty.
+2. Effective Marketing: With improved customer segmentation, the bank can design and implement targeted marketing campaigns. This can result in a higher return on marketing investment, as promotional efforts would be directed at the right audience with the right offerings.
+3. Risk Management: By identifying distinct customer clusters, the bank can more effectively assess and manage risk. For example, customers who frequently engage in high-value transactions may be categorized as higher-risk, prompting closer monitoring or enhanced security measures.
+4. Improved Customer Service: Customer segmentation can also aid in providing differentiated customer service. The bank can provide dedicated service representatives or specialized service channels for different customer clusters.
+5. Product and Service Development: Insights from customer clustering can inform the development of new products and services. By understanding the needs and preferences of each customer segment, the bank can design products that directly cater to these requirements.
+To make these benefits a reality, the bank must prioritize data management and analytical capabilities. It must ensure that data collection is robust and secure, and invest in analytical tools that can perform sophisticated customer segmentation. With such investments, the online bank can fully leverage its digital platform to deliver exceptional value to its customers, setting itself apart in the competitive banking landscape.
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/3.jpg)
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/1.jpg)
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/2.jpg)
+
+![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/4.png)
+
 The Conceptual Model of the Bank:
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/Conceptual%20Model.png)
@@ -57,6 +92,8 @@ https://github.com/Duckling1554/online_banking/blob/main/BD/Bank_DDL.sql
 For instance, 
 
 ![Иллюстрация к проекту](https://github.com/Duckling1554/online_banking/blob/main/pictures/DDL%20Example.png)
+
+Then, Spark were used to fill the preprocessed data inside of the Database
 
 The result of it was a working database:
 
