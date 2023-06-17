@@ -11,20 +11,20 @@ current_dir = os.getcwd()
 
 
 
-def df_collector():
-    customer = pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='CUSTOMER')
+def df_collector(mdm_df):
+    customer = pd.DataFrame(mdm_df)
     transactions = pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='TRANSACTION')
     credit_card = pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='CARD')
     loan =  pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='Loan')
-    account_balance =  pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='ACCOUNT_BALANCE')
-    account = pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='ACCOUNT')
+    account_balance =  pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='ACCOUNT_BALANCE ')
+    account = pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='ACCOUNT ')
 
     return customer, transactions, credit_card, loan, account_balance, account
 
 
 def feature_creator(customer, transactions, credit_card, loan, account_balance, account):
 
-    customer['AGE_CATEGORY'] = datetime.now().year - pd.to_datetime(customer[' BIRTH_DATE (date']).dt.year
+    customer['AGE_CATEGORY'] = datetime.now().year - pd.to_datetime(customer['BIRTH_DATE']).dt.year
     customer['up_to_18'] = customer['AGE_CATEGORY'].apply(lambda x: 1 if x <= 18 else 0)
     customer['18_to_30'] = customer['AGE_CATEGORY'].apply(lambda x: 1 if x in range(19, 30) else 0)
     customer['30_to_45'] = customer['AGE_CATEGORY'].apply(lambda x: 1 if x in range(31, 45) else 0)
@@ -57,11 +57,11 @@ def feature_creator(customer, transactions, credit_card, loan, account_balance, 
                         right_on='CUSTOMER_ID (int)')
     balance_agg['TRANSACTION_TO_BALANCE_RATIO'] = balance_agg['MEAN_TRANSACTION']/balance_agg['MEAN_BALANCE']
     balance_agg['TRANSACTION_TO_LOAN_RATIO'] = balance_agg['MEAN_LOAN_AMT']/balance_agg['MEAN_BALANCE']
-    df = pd.merge(customer, transactions_agg, right_on='CUSTOMER_ID (int', left_on='CUSTOMER_ID (int) ', how='left')
-    df = pd.merge(df, card_agg, right_on='CUSTOMER_ID (int)', left_on='CUSTOMER_ID (int) ', how='left')
-    df = pd.merge(df, loan_agg, right_on='CUSTOMER_ID (int)', left_on='CUSTOMER_ID (int) ', how='left')
-    df = pd.merge(df, balance_agg, right_on='CUSTOMER_ID (int', left_on='CUSTOMER_ID (int) ', how='left')
-    df = pd.merge(df, loan, right_on='CUSTOMER_ID (int)', left_on='CUSTOMER_ID (int) ', how='left')
+    df = pd.merge(customer, transactions_agg, right_on='CUSTOMER_ID (int', left_on='CUSTOMER_ID', how='left')
+    df = pd.merge(df, card_agg, right_on='CUSTOMER_ID (int)', left_on='CUSTOMER_ID', how='left')
+    df = pd.merge(df, loan_agg, right_on='CUSTOMER_ID (int)', left_on='CUSTOMER_ID', how='left')
+    df = pd.merge(df, balance_agg, right_on='CUSTOMER_ID (int', left_on='CUSTOMER_ID', how='left')
+    df = pd.merge(df, loan, right_on='CUSTOMER_ID (int)', left_on='CUSTOMER_ID', how='left')
 
     return df[settings.TRAIN_FEATURES.TRAIN_FEATURES]
 
