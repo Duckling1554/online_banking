@@ -12,7 +12,7 @@ current_dir = os.getcwd()
 
 
 def df_collector(mdm_df):
-    customer = pd.DataFrame(mdm_df)
+    customer = mdm_df.toPandas()
     transactions = pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='TRANSACTION')
     credit_card = pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='CARD')
     loan =  pd.read_excel(os.path.join(current_dir, 'Данные.xlsx'), sheet_name='Loan')
